@@ -1,0 +1,191 @@
+﻿<error errorId="63141438-7549-43a1-aa3a-86608f4e5bfc" host="GUJADHUR-PC" type="System.Data.SqlServerCe.SqlCeException" message="The primary key value cannot be deleted because references to this key still exist. [ Foreign key constraint name = FK_dbo.MessageThread_dbo.Listings_ListingID ]" source="SQL Server Compact ADO.NET Data Provider" detail="System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.SqlServerCe.SqlCeException: The primary key value cannot be deleted because references to this key still exist. [ Foreign key constraint name = FK_dbo.MessageThread_dbo.Listings_ListingID ]&#xD;&#xA;   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)&#xD;&#xA;   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr&amp; pCursor, Boolean&amp; isBaseTableCursor)&#xD;&#xA;   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)&#xD;&#xA;   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()&#xD;&#xA;   at System.Data.Entity.SqlServerCompact.SqlCeMultiCommand.ExecuteNonQuery()&#xD;&#xA;   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()&#xD;&#xA;   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.&lt;ExecuteAsync&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.&lt;UpdateAsync&gt;d__0.MoveNext()&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.&lt;UpdateAsync&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Core.Objects.ObjectContext.&lt;ExecuteInTransactionAsync&gt;d__3d`1.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Core.Objects.ObjectContext.&lt;SaveChangesToStoreAsync&gt;d__39.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Core.Objects.ObjectContext.&lt;SaveChangesInternalAsync&gt;d__31.MoveNext()&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at Repository.Pattern.Ef6.DataContext.&lt;SaveChangesAsync&gt;d__3.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;&#xA;   at Repository.Pattern.Ef6.DataContext.&lt;SaveChangesAsync&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;&#xA;   at BeYourMarket.Web.Areas.Admin.Controllers.ListingController.&lt;CategoryDelete&gt;d__9e.MoveNext() in c:\Users\GUJADHUR\Desktop\beyourmarket-master\beyourmarket-master\src\BeYourMarket.Web\Areas\Admin\Controllers\ListingController.cs:line 702&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass37.&lt;BeginInvokeAsynchronousActionMethod&gt;b__36(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3d()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass46.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3f()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass33.&lt;BeginInvokeActionMethodWithFilters&gt;b__32(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="r.r.gujadhur@gmail.com" time="2016-06-21T12:34:18.3708434Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:max-age=0&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:4&#xD;&#xA;HTTP_CONTENT_TYPE:application/x-www-form-urlencoded&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:CKFinder_Path=Files%3A%2F%3A1; __RequestVerificationToken=ChlpsAyhOZkccYOdB5O7fc_18VD4p9s1Y4-uKFDa7G4yNoLb9LSOyk5plin8k8ynmSUAlqdTeoOcg77UFoMwlScMAUakA3qEf-al-4HK7TE1; ASP.NET_SessionId=ycodyyx4rsmc00trwvgxlag4; .AspNet.ApplicationCookie=5L5Phkv6mAFh93uVHqjm96dwHnDekJC5I2NUGKJFzQotm_-qC6vCQGmjA1184VyXBlMIFt28kWKSR2izY8-my45mRAF-QyBMLJp-U7HBBSi7oEDPGrk9x-0uWvzv_G_pipi1kyWohf7pyuorJ1mkz8lHeAsgvYOcNH96cOKlAA9ztQxzv7TQte2LwChpNszwLV6nhRQKK3hwd6-4if5zVJmKyL1YhPpteWVHib-FfYxVb1qJQB8hdpnIuCWf01bgv9jp8BzvHEGZ6c8r7GuiGBdf_YWTp8uEGKj56Q1svpjKcxoj14Gc22dyURHE8mdGJ4YvnazrgNvQ_TDRnvneO3ISBXIJOb32RX47BTuobroACTMZyd-Gh59SmSeJW0LdWhNXcXqBXbQjXnAocXQlh-r-TcyO3PHDQzQXWpoxpiiKHT_U02m4C63A2h2CJ1dDgOG-WB5zKOBkfKwg2FW_zss45xcffEXQY60TynRJM1X28uNoI13xkIDFoR8fKXG606OD5F2FBeB5-VwUq-GM1A&#xD;&#xA;HTTP_HOST:localhost:6146&#xD;&#xA;HTTP_REFERER:http://localhost:6146/en/admin/listing/categories&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&#xD;&#xA;HTTP_ORIGIN:http://localhost:6146&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: max-age=0&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Content-Length: 4&#xD;&#xA;Content-Type: application/x-www-form-urlencoded&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: CKFinder_Path=Files%3A%2F%3A1; __RequestVerificationToken=ChlpsAyhOZkccYOdB5O7fc_18VD4p9s1Y4-uKFDa7G4yNoLb9LSOyk5plin8k8ynmSUAlqdTeoOcg77UFoMwlScMAUakA3qEf-al-4HK7TE1; ASP.NET_SessionId=ycodyyx4rsmc00trwvgxlag4; .AspNet.ApplicationCookie=5L5Phkv6mAFh93uVHqjm96dwHnDekJC5I2NUGKJFzQotm_-qC6vCQGmjA1184VyXBlMIFt28kWKSR2izY8-my45mRAF-QyBMLJp-U7HBBSi7oEDPGrk9x-0uWvzv_G_pipi1kyWohf7pyuorJ1mkz8lHeAsgvYOcNH96cOKlAA9ztQxzv7TQte2LwChpNszwLV6nhRQKK3hwd6-4if5zVJmKyL1YhPpteWVHib-FfYxVb1qJQB8hdpnIuCWf01bgv9jp8BzvHEGZ6c8r7GuiGBdf_YWTp8uEGKj56Q1svpjKcxoj14Gc22dyURHE8mdGJ4YvnazrgNvQ_TDRnvneO3ISBXIJOb32RX47BTuobroACTMZyd-Gh59SmSeJW0LdWhNXcXqBXbQjXnAocXQlh-r-TcyO3PHDQzQXWpoxpiiKHT_U02m4C63A2h2CJ1dDgOG-WB5zKOBkfKwg2FW_zss45xcffEXQY60TynRJM1X28uNoI13xkIDFoR8fKXG606OD5F2FBeB5-VwUq-GM1A&#xD;&#xA;Host: localhost:6146&#xD;&#xA;Referer: http://localhost:6146/en/admin/listing/categories&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&#xD;&#xA;Origin: http://localhost:6146&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/33/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\GUJADHUR\Desktop\beyourmarket-master\beyourmarket-master\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="r.r.gujadhur@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="r.r.gujadhur@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="r.r.gujadhur@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="4" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="33" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/33" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/admin/listing/categorydelete" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\GUJADHUR\Desktop\beyourmarket-master\beyourmarket-master\src\BeYourMarket.Web\admin\listing\categorydelete" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="7125" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/admin/listing/categorydelete" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="6146" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/8.0" />
+    </item>
+    <item name="URL">
+      <value string="/admin/listing/categorydelete" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="max-age=0" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="4" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="CKFinder_Path=Files%3A%2F%3A1; __RequestVerificationToken=ChlpsAyhOZkccYOdB5O7fc_18VD4p9s1Y4-uKFDa7G4yNoLb9LSOyk5plin8k8ynmSUAlqdTeoOcg77UFoMwlScMAUakA3qEf-al-4HK7TE1; ASP.NET_SessionId=ycodyyx4rsmc00trwvgxlag4; .AspNet.ApplicationCookie=5L5Phkv6mAFh93uVHqjm96dwHnDekJC5I2NUGKJFzQotm_-qC6vCQGmjA1184VyXBlMIFt28kWKSR2izY8-my45mRAF-QyBMLJp-U7HBBSi7oEDPGrk9x-0uWvzv_G_pipi1kyWohf7pyuorJ1mkz8lHeAsgvYOcNH96cOKlAA9ztQxzv7TQte2LwChpNszwLV6nhRQKK3hwd6-4if5zVJmKyL1YhPpteWVHib-FfYxVb1qJQB8hdpnIuCWf01bgv9jp8BzvHEGZ6c8r7GuiGBdf_YWTp8uEGKj56Q1svpjKcxoj14Gc22dyURHE8mdGJ4YvnazrgNvQ_TDRnvneO3ISBXIJOb32RX47BTuobroACTMZyd-Gh59SmSeJW0LdWhNXcXqBXbQjXnAocXQlh-r-TcyO3PHDQzQXWpoxpiiKHT_U02m4C63A2h2CJ1dDgOG-WB5zKOBkfKwg2FW_zss45xcffEXQY60TynRJM1X28uNoI13xkIDFoR8fKXG606OD5F2FBeB5-VwUq-GM1A" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:6146" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:6146/en/admin/listing/categories" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="http://localhost:6146" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <form>
+    <item name="id">
+      <value string="4" />
+    </item>
+  </form>
+  <cookies>
+    <item name="CKFinder_Path">
+      <value string="Files%3A%2F%3A1" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="ChlpsAyhOZkccYOdB5O7fc_18VD4p9s1Y4-uKFDa7G4yNoLb9LSOyk5plin8k8ynmSUAlqdTeoOcg77UFoMwlScMAUakA3qEf-al-4HK7TE1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="ycodyyx4rsmc00trwvgxlag4" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="5L5Phkv6mAFh93uVHqjm96dwHnDekJC5I2NUGKJFzQotm_-qC6vCQGmjA1184VyXBlMIFt28kWKSR2izY8-my45mRAF-QyBMLJp-U7HBBSi7oEDPGrk9x-0uWvzv_G_pipi1kyWohf7pyuorJ1mkz8lHeAsgvYOcNH96cOKlAA9ztQxzv7TQte2LwChpNszwLV6nhRQKK3hwd6-4if5zVJmKyL1YhPpteWVHib-FfYxVb1qJQB8hdpnIuCWf01bgv9jp8BzvHEGZ6c8r7GuiGBdf_YWTp8uEGKj56Q1svpjKcxoj14Gc22dyURHE8mdGJ4YvnazrgNvQ_TDRnvneO3ISBXIJOb32RX47BTuobroACTMZyd-Gh59SmSeJW0LdWhNXcXqBXbQjXnAocXQlh-r-TcyO3PHDQzQXWpoxpiiKHT_U02m4C63A2h2CJ1dDgOG-WB5zKOBkfKwg2FW_zss45xcffEXQY60TynRJM1X28uNoI13xkIDFoR8fKXG606OD5F2FBeB5-VwUq-GM1A" />
+    </item>
+  </cookies>
+</error>
